@@ -109,7 +109,7 @@
     <div class="container my-5">
 
         <!-- Shoes Product Card Start... -->
-        <div class="row">
+        <div class="row my-5">
             <div class="col-md-12">
                 <h3 class="text-center fw-semibold mb-5">Discover Our Popular Courses</h3>
                 <div class="row g-4">
@@ -218,7 +218,10 @@
                 </a>
             </div>
         </div>
-        <div class="row explore-section align-items-center rounded">
+
+
+        <!-- Explore Elearning Section Start... -->
+        <div class="row my-5 explore-section align-items-center rounded">
             <div class="col-md-5 p-0">
                 <img src="assets/images/working.png" class="img-fluid rounded-start">
             </div>
@@ -246,10 +249,83 @@
                 </a>
             </div>
         </div>
+        <!-- Explore Elearning Section End... -->
+
+
+        <!-- Ready To Join Section... -->
+        <div class="row ready-to-join-section d-flex justify-content-center align-items-center rounded my-5 px-5 text-white">
+            <div class="col-md-6">
+                <h2 class="fw-semibold pb-2">Ready to join?</h2>
+                <p class="fw-lighter lh-md">
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                </p>
+            </div>
+            <div class="col-md-6 text-end">
+                <!-- Modal Trigger Button -->
+                <button type="button" class="btn btn-light text-primary fw-semibold rounded-1 px-4 py-2" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                    Register Now
+                </button>
+            </div>
+        </div>
+        <!-- Ready To Join Section... -->
 
     </div>
 </main>
 
+
+
+
+  
+<!-- Registration Modal -->
+<div class="modal fade modal-lg" id="registrationModal" tabindex="-1" aria-labelledby="registrationModal" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Register Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name: </label>
+                  <input type="text" class="form-control" name="first_name" id="firstName" placeholder="Enter first name here...">
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name: </label>
+                  <input type="text" class="form-control" name="last_name" id="lastName" placeholder="Enter last name here...">
+                </div>
+                <div class="col-12">
+                  <label for="emailAddress" class="form-label">Email Address: </label>
+                  <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address here...">
+                </div>
+                <div class="col-12">
+                  <label for="password" class="form-label">Password: </label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter password here...">
+                </div>
+                <div class="col-12">
+                  <label for="address" class="form-label">Address: </label>
+                  <textarea class="form-control" placeholder="Enter your address here..." rows="3" id="address" name="address"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="termsConditionCheck">
+                    <label class="form-check-label" for="termsConditionCheck">
+                      I Accept <a href="#">Terms and Condition</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="form-control btn btn-primary">Register</button>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Later</button>
+        </div>
+    </div>
+    </div>
+</div>
 
 <script src="https://kit.fontawesome.com/cdf319e764.js" crossorigin="anonymous"></script>
 <script src="assets/js/bootstrap.bundle.min.js" rel="script"></script>
